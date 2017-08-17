@@ -183,6 +183,7 @@
          ("M-y" . helm-show-kill-ring)
          ("M-x" . helm-M-x)))
 
+(require 'projectile)
 (use-package projectile
   :ensure t
   :init
@@ -194,6 +195,7 @@
   :diminish projectile-mode)
 
 ;; helm for project navigation
+(require 'helm-projectile)
 (use-package helm-projectile
   :ensure t
   :init (progn
